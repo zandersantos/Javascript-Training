@@ -47,24 +47,40 @@
 
 //Tutorial 6.3
 
-const para = document.querySelector('p');
-//console.log(para.innerText);
-//para.innerText = 'ninjas are awesome!';
+// const para = document.querySelector('p');
+// //console.log(para.innerText);
+// //para.innerText = 'ninjas are awesome!';
 
-const paras = document.querySelectorAll('p');
-// paras.forEach(para =>
+// const paras = document.querySelectorAll('p');
+// // paras.forEach(para =>
+// // {
+// //   console.log(para.innerText);
+// //   para.innerText += ' new text';
+// // });
+
+// const content = document.querySelector('.content');
+// //console.log(content.innerHTML);
+// //content.innerHTML = '<h2>This is a new h2</h2>';
+
+// const people = ['mario', 'luigi', 'yoshi'];
+// people.forEach(person =>
 // {
-//   console.log(para.innerText);
-//   para.innerText += ' new text';
+//   content.innerHTML +=  `<p>${person}</p>`;
 // });
 
-const content = document.querySelector('.content');
-//console.log(content.innerHTML);
-//content.innerHTML = '<h2>This is a new h2</h2>';
+//Tutorial 6.4
 
-const people = ['mario', 'luigi', 'yoshi'];
-people.forEach(person =>
-{
-  content.innerHTML +=  `<p>${person}</p>`;
-});
+const link = document.querySelector('a');
 
+console.log(link.getAttribute('href'));
+
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+
+link.innerText = "TheNet Ninja Website";
+
+const mssg = document.querySelector('p');
+
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success');
+
+mssg.setAttribute('style', 'color: green');
