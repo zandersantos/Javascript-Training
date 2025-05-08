@@ -1,3 +1,5 @@
+//TUTORIAL VIDEO 2
+
 // Tutorial #2.1
 // console.log(1);
 // console.log(2);
