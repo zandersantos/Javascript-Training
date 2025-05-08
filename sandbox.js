@@ -172,5 +172,18 @@
 // console.log(name > 'Shaun'); //true, A lowercase letter is greater than uppercase
 // console.log(name > 'Crystal');
 
+//Tutorial #2.10
+// let age = 25;
+
+// //Loose comparaison (Different types can still be equal)
+// // console.log(age != 25);
+// // console.log(age != '25');
+
+// //Strict Comparison (different types cannot be equal)
+// console.log(age === 25);// True
+// console.log(age === '25');// False
+// console.log(age !== 25);// False
+// console.log(age !== '25');// True
+
 
 
