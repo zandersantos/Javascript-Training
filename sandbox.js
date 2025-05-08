@@ -139,3 +139,38 @@
 
 // let age = null;
 // console.log(age, age + 3, `the age is ${age}`);
+
+//Tutorial #2.9
+//Booleans and Comparison
+// console.log(true, false, "true", "false");
+
+// //Methods can return booleans
+// let email = "luigi@thenetninja.co.uk";
+// let names = ['mario', 'luigi', 'toad']
+
+// //let result = email.includes('@');
+// // let result = names.includes('luigi');
+// // console.log(result);
+
+// //Comparison Operators
+
+// let age = 25;
+
+// // console.log(age == 25);
+// // console.log(age == 30);
+// // console.log(age != 30);
+// // console.log(age > 20);
+// // console.log(age < 20);
+// // console.log(age <= 25);
+// // console.log(age >= 25);
+
+// let name = 'shaun';
+
+// console.log(name == 'shaun');
+// console.log(name == 'Shaun');
+// console.log(name > 'crystal'); //true because shaun comes later (=greater)
+// console.log(name > 'Shaun'); //true, A lowercase letter is greater than uppercase
+// console.log(name > 'Crystal');
+
+
+
