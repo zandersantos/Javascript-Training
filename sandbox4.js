@@ -106,30 +106,49 @@
 //Tutorial 4.6
 //Callbacks and foreach
 
-const myFunc = (callbackFunc) =>
-{
-  let value = 50;
-  callbackFunc(value);
-};
+// const myFunc = (callbackFunc) =>
+// {
+//   let value = 50;
+//   callbackFunc(value);
+// };
 
-//Calling a function with a function as the argument
-myFunc(value =>
-{
-  console.log(value);
-});
+// //Calling a function with a function as the argument
+// myFunc(value =>
+// {
+//   console.log(value);
+// });
+
+// // let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+// // people.forEach((person, index) =>
+// // {
+// //   console.log(index, person);
+// // });
 
 // let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-// people.forEach((person, index) =>
+// const logPerson = (person, index) =>
 // {
-//   console.log(index, person);
-// });
+//   console.log(`${index} - Hello ${person}`);
+// }
 
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// people.forEach(logPerson);
 
-const logPerson = (person, index) =>
+//Tutorial 4.7
+//Get a reference to the 'ul'
+
+const ul = document.querySelector('.people'); //gets the people class in the index
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = ``;
+
+people.forEach(person =>
 {
-  console.log(`${index} - Hello ${person}`);
+  //Create a HTML template for each person
+  html += `<li style="color: purple">${person}</li>`;
 }
+);
 
-people.forEach(logPerson);
+console.log(html);
+
+ul.innerHTML = html;
