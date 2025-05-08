@@ -138,5 +138,3 @@ console.log(userOne, userTwo);
 userOne.age = 50;
 console.log(userOne, userTwo); //they are both the same value now, because only their pointers were updated
 
-
-
