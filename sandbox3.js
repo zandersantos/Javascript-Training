@@ -90,17 +90,29 @@
 
 //Tutorial 3.6
 //Logical Operators - OR || and AND &&
-const password = 'p@ssor';
+// const password = 'p@ssor';
 
-if(password.length >= 12 && password.includes('@'))
+// if(password.length >= 12 && password.includes('@'))
+// {
+//   console.log('that password is mighty strong')
+// }
+// else if(password.length >= 8 || password.includes('@') && password.length > 5)
+// {
+//   console.log('that password is strong enough...');
+// }
+// else
+// {
+//   console.log('password is not strong enough');
+// }
+
+//Tutorial 3.7
+//Logical NOT(!)
+
+let user = false
+
+if(!user)
 {
-  console.log('that password is mighty strong')
+  console.log('you must be logged in to continue');
 }
-else if(password.length >= 8 || password.includes('@') && password.length > 5)
-{
-  console.log('that password is strong enough...');
-}
-else
-{
-  console.log('password is not strong enough');
-}
+console.log(!true);
+console.log(!false);
