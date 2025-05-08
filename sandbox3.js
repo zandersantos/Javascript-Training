@@ -20,18 +20,30 @@
 //Tutorial 3.2
 //While Loops
 
-const names = ['shawn', 'mario', 'luigi'];
+// const names = ['shawn', 'mario', 'luigi'];
 
-// let i =3;
-// while(i <5)
+// // let i =3;
+// // while(i <5)
+// // {
+// //   console.log('in loop: ', i);
+// //   i++;
+// // }
+
+// let i = 0;
+// while(i < names.length)
 // {
-//   console.log('in loop: ', i);
+//   console.log(names[i]);
 //   i++;
 // }
 
-let i = 0;
-while(i < names.length)
+//Tutorial 3.2
+//Do While Loops
+
+let i = 5;
+
+do
 {
-  console.log(names[i]);
+  console.log('val of i is: ', i);
   i++;
 }
+while(i < 5)
