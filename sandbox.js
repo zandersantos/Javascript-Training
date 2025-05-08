@@ -18,6 +18,7 @@
 // var score = 75;
 // console.log(score);
 
+//Tutorial #2.3
 //Strings
 // console.log("Hello, World!");
 
@@ -31,6 +32,7 @@
 // let fullName = firstName + " " + lastName;
 // console.log(fullName);
 
+//Tutorial #2.4
 // //Getting Characters
 // console.log(fullName[8]);
 
@@ -55,3 +57,36 @@
 //let result = email.replace('n', 'w');
 
 //console.log(result);
+
+// Tutorial #2.5
+let radius = 10;
+const pi = 3.14;
+//console.log(radius,pi);
+
+//Math Operators: +,-,*,/,**,%
+
+//console.log(10 / 2);
+
+//let result = radius % 3;
+//let result = pi * radius**2;
+
+//Order of Operations: BEDMAS
+// let reuslt = 5* (10-3)**2
+// console.log(result);
+
+let likes = 10;
+//likes ++; //add 1 to likes
+//likes--; //remove 1 from likes
+//likes += 10; //add the number to the current value of the variable
+// likes -= 5;
+// likes *= 2;
+//likes /= 2;
+
+// console.log(likes);
+
+// //NaN = not a number
+// console.log(5/"hello");
+// console.log(5*"hi");
+
+let result = "the blog has " + likes + " likes";
+console.log(result);
