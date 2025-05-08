@@ -70,17 +70,35 @@
 
 //Tutorial 6.4
 
-const link = document.querySelector('a');
+// const link = document.querySelector('a');
 
-console.log(link.getAttribute('href'));
+// console.log(link.getAttribute('href'));
 
-link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
 
-link.innerText = "TheNet Ninja Website";
+// link.innerText = "TheNet Ninja Website";
 
-const mssg = document.querySelector('p');
+// const mssg = document.querySelector('p');
 
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class', 'success');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
 
-mssg.setAttribute('style', 'color: green');
+// mssg.setAttribute('style', 'color: green');
+
+
+//Tutorial 6.5
+
+//Add additional styles
+const title = document.querySelector('h1');
+//title.setAttribute('style', 'margin: 50px');
+
+//Get the styles values
+console.log(title.style);
+console.log(title.style.color);
+
+//Update styles
+title.style.margin = '50px';
+title.style.color = 'crimson';
+title.style.fontSize = '60px';
+//Remove this style
+title.style.margin = '';
