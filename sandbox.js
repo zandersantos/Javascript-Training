@@ -88,17 +88,50 @@
 
 //Tutorial 6.5
 
-//Add additional styles
-const title = document.querySelector('h1');
-//title.setAttribute('style', 'margin: 50px');
+// //Add additional styles
+// const title = document.querySelector('h1');
+// //title.setAttribute('style', 'margin: 50px');
 
-//Get the styles values
-console.log(title.style);
-console.log(title.style.color);
+// //Get the styles values
+// console.log(title.style);
+// console.log(title.style.color);
 
-//Update styles
-title.style.margin = '50px';
-title.style.color = 'crimson';
-title.style.fontSize = '60px';
-//Remove this style
-title.style.margin = '';
+// //Update styles
+// title.style.margin = '50px';
+// title.style.color = 'crimson';
+// title.style.fontSize = '60px';
+// //Remove this style
+// title.style.margin = '';
+
+// //Tutorial 6.6
+// const content = document.querySelector('p');
+// //Get all classes
+// console.log(content.classList);
+// //Add Class
+// content.classList.add('error');
+// //Remove Class
+// content.classList.remove('error');
+// content.classList.add('success');
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(p =>
+{
+  //console.log(p.textContent);
+  if(p.textContent.includes('error'))
+  {
+    p.classList.add('error');
+  }
+  if(p.textContent.includes('success'))
+    {
+      p.classList.add('success');
+    }
+});
+
+const title = document.querySelector('.title');
+
+//Adds the test
+title.classList.toggle('test');
+//Removes the test
+title.classList.toggle('test');
+
