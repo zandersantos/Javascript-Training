@@ -134,3 +134,8 @@
 // let result = ninjas.push('ken');
 // result = ninjas.pop();
 // console.log(result);
+
+//Tutorial #2.8
+
+// let age = null;
+// console.log(age, age + 3, `the age is ${age}`);
