@@ -185,5 +185,19 @@
 // console.log(age !== 25);// False
 // console.log(age !== '25');// True
 
+//Tutorial #2.11
 
+//Type Conversion
+// let score = "100";
+// // console.log(typeof score); // String
+// // score = Number(score); //When you want the variable to become a number
+// // console.log(score+1);
+// // console.log(typeof score); //Int
+
+// //let result = Number('hello');
+// //let result = String(51);
+// //let result = Boolean(100);
+// let result = Boolean('');
+
+// console.log(result, typeof result);
 
