@@ -90,17 +90,46 @@
 // }
 
 //Tutorial 4.5
-const name = 'shaun';
+// const name = 'shaun';
 
-//Functions
-const greet = () => 'hello';
+// //Functions
+// const greet = () => 'hello';
 
-let resultOne = greet();
-console.log(resultOne);
+// let resultOne = greet();
+// console.log(resultOne);
 
-//Methods
+// //Methods
 
-let resultTwo = name.toUpperCase()
-console.log(resultTwo);
+// let resultTwo = name.toUpperCase()
+// console.log(resultTwo);
 
+//Tutorial 4.6
+//Callbacks and foreach
 
+const myFunc = (callbackFunc) =>
+{
+  let value = 50;
+  callbackFunc(value);
+};
+
+//Calling a function with a function as the argument
+myFunc(value =>
+{
+  console.log(value);
+});
+
+// let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+// people.forEach((person, index) =>
+// {
+//   console.log(index, person);
+// });
+
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+const logPerson = (person, index) =>
+{
+  console.log(`${index} - Hello ${person}`);
+}
+
+people.forEach(logPerson);
