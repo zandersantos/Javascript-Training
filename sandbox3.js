@@ -108,11 +108,32 @@
 //Tutorial 3.7
 //Logical NOT(!)
 
-let user = false
+// let user = false
 
-if(!user)
+// if(!user)
+// {
+//   console.log('you must be logged in to continue');
+// }
+// console.log(!true);
+// console.log(!false);
+
+//Tutorial 3.7
+//Break and Continue
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+for(let i = 0; i < scores.length; i++)
 {
-  console.log('you must be logged in to continue');
+  if(scores[i] === 0)
+  {
+    continue;
+  }
+
+  console.log('your score: ', scores[i]);
+
+  if(scores[i] === 100)
+  {
+    console.log('Congrats you got the top score!');
+    break;
+  }
 }
-console.log(!true);
-console.log(!false);
