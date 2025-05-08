@@ -3,14 +3,57 @@
 //Tutorial 5.1
 //Object Literals
 
-// let user =
-// {
-//   name: 'crystal',
-//   age: 30,
-//   email: 'crystal@thenetninja.co.uk',
-//   location: 'berlin',
-//   blog: ['why mac & cheese rules', '10 things to make with marmite']
-// };
+const blogs = [
+  {
+    title: 'why mac & cheese rules', likes: 30
+  },
+  {
+    title: '10 things to make with marmite', likes: 50
+  }
+];
+//console.log(blogs);
+
+let user =
+{
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@thenetninja.co.uk',
+  location: 'berlin',
+  blogs: [
+  {
+    title: 'why mac & cheese rules', likes: 30
+  },
+  {
+    title: '10 things to make with marmite', likes: 50
+  }],
+  login()
+  {
+    console.log('the user logged in');
+  },
+  logout()
+  {
+    console.log('the user logged out');
+  },
+  logBlogs() //Arrow Functions do not work with 'this'
+  {
+    console.log('this user has written the following blogs:');
+    this.blogs.forEach(blog=>
+    {
+      console.log(blog.title, blog.likes)
+    }
+    )
+  }
+};
+
+//We want this.
+user.logBlogs();
+
+//We dont want this. This just gets the Window.
+// console.log(this);
+
+// //Methods are functions but defined on an object. Ex. login^^
+// user.login();
+// user.logout();
 
 // //Basic Calling
 // console.log(user);
@@ -37,39 +80,3 @@
 
 // //Getting the type of an object
 // console.log(typeof user);
-
-let user =
-{
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-  login()
-  {
-    console.log('the user logged in');
-  },
-  logout()
-  {
-    console.log('the user logged out');
-  },
-  logBlogs() //Arrow Functions do not work with 'this'
-  {
-    console.log('this user has written the following blogs:');
-    this.blogs.forEach(blog=>
-    {
-      console.log(blog)
-    }
-    )
-  }
-};
-
-//We want this.
-user.logBlogs();
-
-//We dont want this. This just gets the Window.
-console.log(this);
-
-//Methods are functions but defined on an object. Ex. login^^
-user.login();
-user.logout();
