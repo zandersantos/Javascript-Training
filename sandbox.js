@@ -59,8 +59,8 @@
 //console.log(result);
 
 // Tutorial #2.5
-let radius = 10;
-const pi = 3.14;
+// let radius = 10;
+// const pi = 3.14;
 //console.log(radius,pi);
 
 //Math Operators: +,-,*,/,**,%
@@ -74,7 +74,7 @@ const pi = 3.14;
 // let reuslt = 5* (10-3)**2
 // console.log(result);
 
-let likes = 10;
+//let likes = 10;
 //likes ++; //add 1 to likes
 //likes--; //remove 1 from likes
 //likes += 10; //add the number to the current value of the variable
@@ -88,5 +88,27 @@ let likes = 10;
 // console.log(5/"hello");
 // console.log(5*"hi");
 
-let result = "the blog has " + likes + " likes";
+// let result = "the blog has " + likes + " likes";
+// console.log(result);
+
+//Tutorial #2.6
+//Template Strings
+const title = 'Best reads of 2019';
+const author = "Mario";
+const likes = 30;
+
+//Concatenation Way
+//let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+
+//Template String Way
+let result = `The blog called ${title} by ${author} has ${likes} likes`;
+
+//Creating HTML templates
+let html = `
+  <h2>${title}</h2>
+  <p>By ${author}</p>
+  <span>This blog has ${likes} likes</span>
+`;
+
 console.log(result);
+console.log(html);
