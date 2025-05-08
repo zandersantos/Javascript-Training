@@ -29,17 +29,42 @@
 //Tutorial 6.2
 
 //Get Element by ID
-const title = document.getElementById('page-title');
-console.log(title);
+// const title = document.getElementById('page-title');
+// console.log(title);
 
-//Get Elements by Their class name
-const errors = document.getElementsByClassName('error');
-console.log(errors);
-console.log(errors[0]);
-            //You cannot do forEach
+// //Get Elements by Their class name
+// const errors = document.getElementsByClassName('error');
+// console.log(errors);
+// console.log(errors[0]);
+//             //You cannot do forEach
 
 
-//Get Elements by their tag name
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[1]);
+// //Get Elements by their tag name
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// console.log(paras[1]);
+
+
+//Tutorial 6.3
+
+const para = document.querySelector('p');
+//console.log(para.innerText);
+//para.innerText = 'ninjas are awesome!';
+
+const paras = document.querySelectorAll('p');
+// paras.forEach(para =>
+// {
+//   console.log(para.innerText);
+//   para.innerText += ' new text';
+// });
+
+const content = document.querySelector('.content');
+//console.log(content.innerHTML);
+//content.innerHTML = '<h2>This is a new h2</h2>';
+
+const people = ['mario', 'luigi', 'yoshi'];
+people.forEach(person =>
+{
+  content.innerHTML +=  `<p>${person}</p>`;
+});
+
